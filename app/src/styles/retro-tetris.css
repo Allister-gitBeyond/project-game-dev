@@ -1,0 +1,227 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*               {       -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;        }
+
+
+html            {       height: 100%;       }
+
+
+body            {       height: 100%;
+                        min-height: 100vh;
+                        width: 100%;
+                        min-width: 100vh;
+
+                        bac: 0.5;
+
+                        background: silver;
+
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: 100% 100%;
+                        background-image:
+
+                        /* linear-gradient(
+                        rgba(255,255,255,0.05),
+                        rgba(255,255,255,0.05)), */
+
+                        /* url("https://images.wallpapersden.com/image/download/dark-boy-hd-anime-minimal_bmZpZ2uUmZqaraWkpJRnZm1prWZnZ2k.jpg"); */
+                        /* url("https://img.goodfon.com/original/1920x1080/2/b0/cs50-computer-science-harvard-minimalism-logo-programing-stu.jpg")  */
+                        url("https://preview.redd.it/bqgbl98kx1s91.png?width=1920&format=png&auto=webp&s=c4426389a9f9bcb064f140d01cb3138ea1ef63f4");        }
+
+
+.container      {       height: auto;
+                        width: 100%;
+
+                        display: flex;
+
+                        flex-direction: column;
+
+                        /*  demonstrates that block for all Heading tags  */
+
+                        justify-content: center;
+                        align-items: center;
+
+                        text-align: center;
+
+                        /*  therefore to adjust use text-align property to make alignment changes to text  */
+
+                        margin: 25em 0 0;
+
+                        padding: 5px;                   }
+
+
+#board          {       /* height: 500px;
+                        width: 500px; */
+
+                        padding: 0.70em;
+
+                        border-radius: 10px;
+                        border: 2.5px silver solid;
+
+                        background: #222831;            }
+
+
+#button         {       height: 70px;
+                        width: 270px;
+
+                        padding: 15px;
+
+                        margin: 50px;
+
+                        border-radius: 10px;
+                        border: 2.5px silver solid;
+
+                        font-size: 18px;
+                        font-family: cc-pixel-arcade-display;
+
+                        color: silver;
+
+                        background: #222831;            }
+
+
+#play           {       height: 70px;
+                        width: 170px;
+
+                        position: absolute;
+
+                        padding: 10px;
+
+                        border-radius: 10px;
+                        border: 2.5px silver solid;
+
+                        font-size: 18px;
+                        font-family: cc-pixel-arcade-display;
+
+                        color: silver;
+
+                        background: #222831;            }
+
+
+#score          {       margin-left: 2em;               }
+
+
+/* #gameover    {       margin-right: 2em;              } */
+
+
+#score ,
+#gameover       {       height: 3.5em;
+                        width: 10em;
+
+
+                        text-align: center;
+
+                        vertical-align: middle;
+
+                        border-radius: 5px;
+
+                        font-size: 1em;
+                        font-family: cc-pixel-arcade-display;
+
+                        line-height: 3.5em;
+
+                        color: azure;
+
+                        /* background: #222831; */
+
+                        opacity: 0.65;
+
+                        transition: opacity 1s ease-in-out;     }
+
+
+#score:hover    {       opacity: 1;     }
+#gameover:hover {       opacity: 1;     }
+
+
+
+
+
+/*==========================/
+        HEADER STYLES
+/==========================*/
+
+
+/*  Header Bar  */
+
+.header         {       height: 4em;
+                        width: 100%;
+
+                        display: flex;
+
+                        flex-direction: row;
+
+                        justify-content: start;
+
+                        align-items: center;
+
+                        border-bottom-color: rgba(255, 255, 255, 0.14);
+                        border-bottom-style: solid;
+                        border-bottom-width: 1px;
+
+
+                        /*  LeetCode color  */
+
+                        background: rgb(40, 40, 40);            }
+
+
+
+
+
+
+
+
+
+
+
+/*  Fonts  */
+
+
+
+@font-face      {       font-family: "borax-variable", sans-serif;
+                        font-variation-settings: "wght" 400;    }
+
+
+@font-face      {       font-family: "campus-mn", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                     }
+
+
+@font-face      {       font-family: "wausau", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                     }
+
+
+@font-face      {       font-family: "cc-pixel-arcade-display", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
