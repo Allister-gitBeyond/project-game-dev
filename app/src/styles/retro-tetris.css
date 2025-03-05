@@ -23,6 +23,8 @@ body            {       height: 100%;
                         width: 100%;
                         min-width: 100vh;
 
+                        display: flex;
+
                         bac: 0.5;
 
                         background: silver;
@@ -41,9 +43,23 @@ body            {       height: 100%;
                         url("https://preview.redd.it/bqgbl98kx1s91.png?width=1920&format=png&auto=webp&s=c4426389a9f9bcb064f140d01cb3138ea1ef63f4");        }
 
 
+.wrap            {      height: 100%;
+                        min-height: 100vh;
+                        width: 100%;
+                        min-width: 100vh;
+
+                        display: flex;
+
+                        flex-direction: column;
+
+                        justify-content: start;
+                        align-items: center;            
+
+                        padding: 0.70em;                }
+
 .container,
 .rotation ,
-.controls           {   height: auto;
+.controls        {      height: auto;
                         width: 100%;
 
                         display: flex;
@@ -62,12 +78,19 @@ body            {       height: 100%;
 
 
 .container      {       flex-direction: column;
-                        margin: 25em 0 0;               }
 
-.rotation       {       flex-direction: row;
-                        margin: 5em 0 2em;                }
+                        margin: 15em 0 0;               }
 
-.controls       {       flex-direction: row;            }
+
+
+.controls       {       width: 360px;
+
+                        padding: 0.70em;
+
+                        flex-direction: row;            
+
+                        justify-content: space-between;
+                        align-items: center;            }
 
 
 #board          {       /* height: 500px;
@@ -89,13 +112,18 @@ body            {       height: 100%;
                         border-radius: 10px;
                         border: 2.5px silver solid;
 
-                        font-size: 18px;
                         font-family: cc-pixel-arcade-display;
 
                         color: silver;
 
                         background: #222831;            }
 
+
+#button         {       font-size: 16px;                  }
+
+#btnRight,
+#btnLeft ,
+#btnRotate      {       font-size: 12px;                  }
 
 
 #button         {       height: 70px;
@@ -105,10 +133,10 @@ body            {       height: 100%;
 
 #btnRight,
 #btnLeft ,
-#btnRotate      {       height: 50px;
-                        width: 150px;                     
+#btnRotate      {       height: auto;
+                        width: 30%;                     
 
-                        margin: 10px 15px;                     }
+                        margin: 0.75em 0;                 }
 
 
 
@@ -124,7 +152,7 @@ body            {       height: 100%;
                         border-radius: 10px;
                         border: 2.5px silver solid;
 
-                        font-size: 18px;
+                        font-size: 16px;
                         font-family: cc-pixel-arcade-display;
 
                         color: silver;
@@ -180,6 +208,10 @@ body            {       height: 100%;
 .header         {       height: 4em;
                         width: 100%;
 
+                        position: fixed;
+
+                        top: 0;
+
                         display: flex;
 
                         flex-direction: row;
@@ -197,6 +229,40 @@ body            {       height: 100%;
 
                         background: rgb(40, 40, 40);            }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============
+Media Queries
+===============*/
+
+
+@media
+(max-width: 2000px)     {
+
+        .container      {       margin: 10em 0 0;       }
+        .controls       {       width: 40vh;            }
+        #board          {       height: 70vh;
+                                width: 40vh;            }
+
+        }
 
 
 

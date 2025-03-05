@@ -62,7 +62,6 @@ const HEIGHT = 600;
 
 const PIXELS = 30;
 
-
 const COLORS = {
 
     0: "#FF971C",
@@ -138,6 +137,16 @@ document.addEventListener("DOMContentLoaded", (event) =>  {
     btns[0].appendChild(LeftButton);
 
 
+    var RotateButton = document.createElement('button');
+
+    RotateButton.id = "btnRotate";
+
+    RotateButton.innerHTML += "Rotate";
+
+    btns[0].appendChild(RotateButton);
+
+
+
     var RightButton = document.createElement('button');
 
     RightButton.id = "btnRight";
@@ -148,13 +157,13 @@ document.addEventListener("DOMContentLoaded", (event) =>  {
 
 
 
-    var RotateButton = document.createElement('button');
+    // var RotateButton = document.createElement('button');
 
-    RotateButton.id = "btnRotate";
+    // RotateButton.id = "btnRotate";
 
-    RotateButton.innerHTML += "Rotate";
+    // RotateButton.innerHTML += "Rotate";
 
-    btnsR[0].appendChild(RotateButton);
+    // btnsR[0].appendChild(RotateButton);
 
 
     mySound.play();
