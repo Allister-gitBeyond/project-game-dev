@@ -19,24 +19,19 @@ html            {       height: 100%;       }
 
 
 body            {       height: 100%;
-                        min-height: 100vh;
-                        width: 100%;
-                        min-width: 100vh;
+                        width: 100%;        }
 
-                        background-image:
-                        /* linear-gradient
-                        (rgba(255,255,255,0.05),
-                        rgba(255,255,255,0.05)), */
-                        url("https://images2.alphacoders.com/686/thumb-1920-686657.jpg");
-                        background-image: url("https://images2.alphacoders.com/686/thumb-1920-686657.jpg");
+
+.bckgrnd        {       
                         background-repeat: no-repeat;
                         background-attachment: fixed;
-                        background-size: 100% 100%;     }
+                        background-size: 100% 100%;           }
+
 
 
 h2              {       font-family: campus-mn;
 
-                        color: silver;                  }
+                        color: silver;                      }
 
 
 .title          {       height: 100%;
@@ -232,10 +227,31 @@ h2              {       font-family: campus-mn;
 
 
 
+/*===============
+Media Queries
+===============*/
 
 
+@media
+(max-width: 969px)     {
 
+            .bckgrnd    {   background-image: url("../static/imgs/project-mobile-friendly.jpg");    }}
 
+@media
+(min-width: 969px)     {
+
+            .bckgrnd    {   background-image: url("../static/imgs/project-triforce.jpg");                   }}
+
+@media
+(min-width: 2000px)     {
+
+            .bckgrnd    {   background-image:
+
+                            /* linear-gradient
+                            (rgba(255,255,255,0.05),
+                            rgba(255,255,255,0.05)), */
+
+                            url("../static/imgs/project-tp.jpg");           }}
 
 
 
