@@ -41,12 +41,12 @@ body            {       height: 100%;
                         url("https://preview.redd.it/bqgbl98kx1s91.png?width=1920&format=png&auto=webp&s=c4426389a9f9bcb064f140d01cb3138ea1ef63f4");        }
 
 
-.container      {       height: auto;
+.container,
+.rotation ,
+.controls           {   height: auto;
                         width: 100%;
 
                         display: flex;
-
-                        flex-direction: column;
 
                         /*  demonstrates that block for all Heading tags  */
 
@@ -57,9 +57,17 @@ body            {       height: 100%;
 
                         /*  therefore to adjust use text-align property to make alignment changes to text  */
 
-                        margin: 25em 0 0;
-
                         padding: 5px;                   }
+
+
+
+.container      {       flex-direction: column;
+                        margin: 25em 0 0;               }
+
+.rotation       {       flex-direction: row;
+                        margin: 5em 0 2em;                }
+
+.controls       {       flex-direction: row;            }
 
 
 #board          {       /* height: 500px;
@@ -73,12 +81,10 @@ body            {       height: 100%;
                         background: #222831;            }
 
 
-#button         {       height: 70px;
-                        width: 270px;
-
-                        padding: 15px;
-
-                        margin: 50px;
+#button ,
+#btnRight,
+#btnLeft ,
+#btnRotate      {       padding: 15px;
 
                         border-radius: 10px;
                         border: 2.5px silver solid;
@@ -89,6 +95,23 @@ body            {       height: 100%;
                         color: silver;
 
                         background: #222831;            }
+
+
+
+#button         {       height: 70px;
+                        width: 270px;                     
+
+                        margin: 50px;                     }
+
+#btnRight,
+#btnLeft ,
+#btnRotate      {       height: 50px;
+                        width: 150px;                     
+
+                        margin: 10px 15px;                     }
+
+
+
 
 
 #play           {       height: 70px;

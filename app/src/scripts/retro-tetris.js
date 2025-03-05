@@ -52,6 +52,9 @@ const head = document.querySelectorAll("header");
 
 const container = document.querySelectorAll("div.container");
 
+const btns = document.querySelectorAll("div.controls");
+
+const btnsR = document.querySelectorAll("div.rotation");
 
 const WIDTH = 360;                                                                                  //    Improvements:   Height and Pixels assigned to global variables
 
@@ -126,8 +129,35 @@ document.addEventListener("DOMContentLoaded", (event) =>  {
 
 
 
-    mySound.play();
+    var LeftButton = document.createElement('button');
 
+    LeftButton.id = "btnLeft";
+
+    LeftButton.innerHTML += "< Left";
+
+    btns[0].appendChild(LeftButton);
+
+
+    var RightButton = document.createElement('button');
+
+    RightButton.id = "btnRight";
+
+    RightButton.innerHTML += "Right >";
+
+    btns[0].appendChild(RightButton);
+
+
+
+    var RotateButton = document.createElement('button');
+
+    RotateButton.id = "btnRotate";
+
+    RotateButton.innerHTML += "Rotate";
+
+    btnsR[0].appendChild(RotateButton);
+
+
+    mySound.play();
 
 
     event.preventDefault();
@@ -145,6 +175,8 @@ document.addEventListener("DOMContentLoaded", (event) =>  {
         game.grid(game.cellsdown , game.cellsacross);
 
         game.controls();
+
+        game.touchcontrols();
 
         event.preventDefault();   })});
 
@@ -243,7 +275,7 @@ class gameboard {                                                               
 
   cells() {
 
-    this.cellsdown = gameboard.cells(this.height, this.pixels);                                       //    Improvements:   Code the calcultated dimensions formula only one time rather than two
+    this.cellsdown = gameboard.cells(this.height, this.pixels);                                       //    Improvements:   Code the calculated dimensions formula only one time rather than two
 
     this.cellsacross = gameboard.cells(this.width, this.pixels);   }
 
@@ -301,6 +333,34 @@ class gameboard {                                                               
 
 
 
+
+    touchcontrols() {
+
+        window.addEventListener("click" , (event) => {
+
+        if (event.defaultPrevented) {
+            return  }
+
+        if (this.disable === true)  {
+            return  }
+
+        switch (event.target.id)  {
+
+            case "btnRotate":
+                this.pipe();
+                break;
+
+            case "btnLeft":
+                this.left();
+                break;
+
+            case "btnRight":
+                this.right(this.cellsacross);
+                break;  }})}
+
+
+
+        
 
 
 
