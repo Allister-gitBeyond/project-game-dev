@@ -262,6 +262,11 @@ Media Queries
         #board          {       height: 70vh;
                                 width: 40vh;            }
 
+
+
+        body            {       height: 100vh;  
+                                width: 100vh;           }
+
         }
 
 
