@@ -25,14 +25,17 @@ body            {       height: 100%;
 
                         display: flex;
 
+                        justify-content: center;
+                        align-items: center;
+
                         bac: 0.5;
 
                         background: silver;
 
-                        background-repeat: no-repeat;
+                        /* background-repeat: no-repeat;
                         background-attachment: fixed;
                         background-size: 100% 100%;
-                        background-image:
+                        background-image: */
 
                         /* linear-gradient(
                         rgba(255,255,255,0.05),
@@ -40,15 +43,12 @@ body            {       height: 100%;
 
                         /* url("https://images.wallpapersden.com/image/download/dark-boy-hd-anime-minimal_bmZpZ2uUmZqaraWkpJRnZm1prWZnZ2k.jpg"); */
                         /* url("https://img.goodfon.com/original/1920x1080/2/b0/cs50-computer-science-harvard-minimalism-logo-programing-stu.jpg")  */
-                        url("https://preview.redd.it/bqgbl98kx1s91.png?width=1920&format=png&auto=webp&s=c4426389a9f9bcb064f140d01cb3138ea1ef63f4");        }
+                        /* url("https://preview.redd.it/bqgbl98kx1s91.png?width=1920&format=png&auto=webp&s=c4426389a9f9bcb064f140d01cb3138ea1ef63f4");         */
+
+                        }
 
 
-.wrap            {      height: 100%;
-                        min-height: 100vh;
-                        width: 100%;
-                        min-width: 100vh;
-
-                        display: flex;
+.wrap            {      display: flex;
 
                         flex-direction: column;
 
@@ -59,10 +59,7 @@ body            {       height: 100%;
 
 .container,
 .rotation ,
-.controls        {      height: auto;
-                        width: 100%;
-
-                        display: flex;
+.controls        {      display: flex;
 
                         /*  demonstrates that block for all Heading tags  */
 
@@ -257,15 +254,16 @@ Media Queries
 @media
 (max-width: 2000px)     {
 
+
+
+
         .container      {       margin: 10em 0 0;       }
-        .controls       {       width: 40vh;            }
+        /* .controls       {       width: 40vh;            }
         #board          {       height: 70vh;
-                                width: 40vh;            }
+                                width: 40vh;            } */
 
 
 
-        body            {       height: 100vh;  
-                                width: 100vh;           }
 
         }
 
