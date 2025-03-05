@@ -233,12 +233,12 @@ Media Queries
 
 
 @media
-(max-width: 969px)     {
+(max-width: 1100px)     {
 
             .bckgrnd    {   background-image: url("../static/imgs/project-mobile-friendly.jpg");    }}
 
 @media
-(min-width: 969px)     {
+(min-width: 1100px)     {
 
             .bckgrnd    {   background-image: url("../static/imgs/project-triforce.jpg");                   }}
 
