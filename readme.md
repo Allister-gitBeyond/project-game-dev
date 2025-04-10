@@ -62,7 +62,6 @@
 
 
   <br><br><br><br><br><br><br><br><br><br>
-<<<<<<< HEAD
 
 
 
@@ -73,5 +72,4 @@
 
 
 
-=======
->>>>>>> fcfddec406fa87735c2dacbd9c0411e865d86341
+
