@@ -1,0 +1,328 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*               {       -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;        
+
+                        -webkit-tap-highlight-color: transparent;
+                        -webkit-touch-callout: none;
+                        touch-action: manipulation;                                     }
+
+
+html            {       height: 100%;           }
+
+
+body            {       height: 100%;
+                        width: 100%;
+
+                        display: flex;
+
+                        justify-content: center;
+                        align-items: center;
+
+                        bac: 0.5;
+
+                        background: silver;     
+
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: 100% 100%;     }
+
+
+.wrap            {      height: 100%;
+                        width: 100%;
+
+                        display: flex;
+
+                        flex-direction: column;
+
+                        justify-content: start;
+                        align-items: center;            
+
+                        padding: 0.70em;                }
+
+.container,
+.rotation ,
+.controls        {      display: flex;
+
+                        /*  demonstrates that block for all Heading tags  */
+
+                        justify-content: center;
+                        align-items: center;
+
+                        text-align: center;
+
+                        /*  therefore to adjust use text-align property to make alignment changes to text  */
+
+                        padding: 5px;                   }
+
+
+
+.container      {       flex-direction: column;
+
+                        margin: 15em 0 0;               }
+
+
+
+.controls       {       width: 360px;
+
+                        padding: 0.70em;
+
+                        flex-direction: row;            
+
+                        justify-content: space-between;
+                        align-items: center;            }
+
+
+#board          {       /* height: 500px;
+                        width: 500px; */
+
+                        padding: 0.70em;
+
+                        border-radius: 10px;
+                        border: 2.5px silver solid;
+
+                        background: #222831;            }
+
+
+#button ,
+#btnRight,
+#btnLeft ,
+#btnRotate      {       padding: 15px;
+
+                        border-radius: 10px;
+                        border: 2.5px silver solid;
+
+                        font-family: cc-pixel-arcade-display;
+
+                        color: silver;
+
+                        background: #222831;            }
+
+
+#button         {       font-size: 16px;                  }
+
+#btnRight,
+#btnLeft ,
+#btnRotate      {       font-size: 12px;                  }
+
+
+#button         {       height: 70px;
+                        width: 270px;                     
+
+                        margin: 50px;                     }
+
+#btnRight,
+#btnLeft ,
+#btnRotate      {       height: auto;
+                        width: 30%;                     
+
+                        margin: 0.75em 0;                 }
+
+
+
+
+
+#play           {       height: 70px;
+                        width: 170px;
+
+                        position: absolute;
+
+                        padding: 10px;
+
+                        border-radius: 10px;
+                        border: 2.5px silver solid;
+
+                        font-size: 16px;
+                        font-family: cc-pixel-arcade-display;
+
+                        color: silver;
+
+                        background: #222831;            }
+
+
+#score          {       margin-left: 2em;               }
+
+
+/* #gameover    {       margin-right: 2em;              } */
+
+
+#score ,
+#gameover       {       height: 3.5em;
+                        width: 10em;
+
+
+                        text-align: center;
+
+                        vertical-align: middle;
+
+                        border-radius: 5px;
+
+                        font-size: 1em;
+                        font-family: cc-pixel-arcade-display;
+
+                        line-height: 3.5em;
+
+                        color: azure;
+
+                        /* background: #222831; */
+
+                        opacity: 0.65;
+
+                        transition: opacity 1s ease-in-out;     }
+
+
+#score:hover    {       opacity: 1;     }
+#gameover:hover {       opacity: 1;     }
+
+
+
+
+
+/*==========================/
+        HEADER STYLES
+/==========================*/
+
+
+/*  Header Bar  */
+
+.header         {       height: 4em;
+                        width: 100%;
+
+                        position: fixed;
+
+                        top: 0;
+
+                        display: flex;
+
+                        flex-direction: row;
+
+                        justify-content: start;
+
+                        align-items: center;
+
+                        border-bottom-color: rgba(255, 255, 255, 0.14);
+                        border-bottom-style: solid;
+                        border-bottom-width: 1px;
+
+
+                        /*  LeetCode color  */
+
+                        background: rgb(40, 40, 40);            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============
+Media Queries
+===============*/
+
+
+@media
+(max-width: 969px)     {
+
+
+
+
+        .container      {       height: 100%;
+                                width: 100%;
+
+                                margin: 5em 0 0;        }
+
+
+        #board          {       height: 80%;
+                                width: 70%;             }}
+
+
+
+
+@media
+(max-width: 1200px)     {
+
+            .bckgrnd    {   background-image: url("../static/imgs/project-mobile-friendly-botw.jpg");    }}
+
+@media
+(min-width: 1200px)     {
+
+            .bckgrnd    {   background-image: 
+
+                            /* url("https://images.wallpapersden.com/image/download/dark-boy-hd-anime-minimal_bmZpZ2uUmZqaraWkpJRnZm1prWZnZ2k.jpg"); */
+                            url("../static/imgs/project-botw.jpg");        }}
+
+
+
+                                
+
+
+
+
+
+
+/*  Fonts  */
+
+
+
+@font-face      {       font-family: "borax-variable", sans-serif;
+                        font-variation-settings: "wght" 400;    }
+
+
+@font-face      {       font-family: "campus-mn", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                     }
+
+
+@font-face      {       font-family: "wausau", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                     }
+
+
+@font-face      {       font-family: "cc-pixel-arcade-display", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

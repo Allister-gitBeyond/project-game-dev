@@ -1,0 +1,285 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*               {       -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;        }
+
+
+html            {       height: 100%;       }
+
+
+body            {       height: 100%;
+                        width: 100%;        }
+
+
+.bckgrnd        {       
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: 100% 100%;           }
+
+
+
+h2              {       font-family: campus-mn;
+
+                        color: silver;                      }
+
+
+.title          {       height: 100%;
+                        width: 100%;
+
+                        /* flex-grow: 1; */
+
+                        display: flex;
+
+                        justify-content: center;
+                        align-items: center;
+
+                        margin: 0;
+
+                        padding: 5px;
+
+                        font-size: 50px;
+                        /* font-family: sans-serif; */
+
+                        border: 5px azure solid;
+
+                        transition: 2s transform        }
+
+
+.startgame:hover .title
+
+                {       transform: translate(50px,100px);       }
+
+
+.square         {       background: azure;              }
+
+
+.square ,
+.squareA ,
+.squareB ,
+.squareC ,
+.squareD ,
+.squareZ ,
+.squareUn       {       height: 25px;
+                        width: 25px;
+
+                        position: absolute;
+
+                        top: 0;
+                        right: 0;
+
+                        border: 2.5px azure solid;
+
+                        transition: 3s transform , 3s border-color;     }
+
+/* .square , .squareA , .squareB , .squareC , .squareD , .squareZ , .squareUn
+                                                        { transition: 3s transform } */
+
+
+
+
+
+.startgame:hover .squareA
+                {       transform: translate(20px,40px);
+                        /* border-color: #753422; */
+                        border-color: #222831;              }
+
+
+.startgame:hover .squareB
+                {       transform: translate(30px,60px);
+                        /* border-color: #753422; */
+                        border-color: #222831;              }
+
+
+.startgame:hover .squareC
+                {       transform: translate(40px,80px);
+                        /* border-color: #753422; */
+                        border-color: #222831;              }
+
+
+.startgame:hover .squareD
+                {       transform: translate(10px,20px);
+                        /* border-color: #753422; */
+                        border-color: #222831;              }
+
+
+.startgame:hover .squareZ
+                {       transform: translate(50px,100px);
+                        /* border-color: #753422; */
+                        border-color: #222831;              }
+
+
+.startgame:hover .squareUn
+                {       transform: translate(100px,200px);
+                        /* border-color: #753422; */
+                        border-color: #222831;              }
+
+
+
+
+.startgame:hover .squA
+                {       transform: translate(20px,40px);    }
+
+
+.startgame:hover .squB
+                {       transform: translate(30px,60px);    }
+
+
+.startgame:hover .squC
+                {       transform: translate(40px,80px);    }
+
+
+.startgame:hover .squD
+                {       transform: translate(10px,20px);    }
+
+
+.startgame:hover .squZ
+                {       transform: translate(50px,100px);   }
+
+
+
+
+
+.container      {       height: 100%;
+                        width: 100%;
+
+                        display: flex;
+
+                        justify-content: center;
+                        align-items: center;
+
+                        text-align: center;
+
+                        margin: 0;
+
+                        padding: 5px;       }
+
+
+
+
+.startgame      {       height: 500px;
+                        width: 500px;
+
+                        display: flex;
+
+                        position: absolute;
+
+
+                        justify-content: center;
+                        align-items: center;
+
+                        text-align: center;
+
+                        margin: 0;
+
+                        padding: 5px;
+
+                        border: 10px azure solid;       }
+
+
+.squ ,
+.squA ,
+.squB ,
+.squC ,
+.squD ,
+.squZ           {       height: 25px;
+                        width: 25px;
+
+                        position: absolute;
+
+                        bottom: 0;
+                        left: 0;
+
+                        border: 2.5px azure solid;
+
+                        background: azure;
+
+                        transition: 2s transform        }
+
+
+.endgame        {       height: 690px;
+                        width: 590px;
+
+                        display: flex;
+
+                        /* position: absolute; */
+
+                        justify-content: center;
+                        align-items: center;
+
+                        text-align: center;
+
+                        margin: 0;
+
+                        padding: 5px;
+
+                        border: 15px azure solid;       }
+
+
+
+/*===============
+Media Queries
+===============*/
+
+
+@media
+(max-width: 1100px)     {
+
+            .bckgrnd    {   background-image: url("../static/imgs/project-mobile-friendly.jpg");    }}
+
+@media
+(min-width: 1100px)     {
+
+            .bckgrnd    {   background-image: url("../static/imgs/project-triforce.jpg");                   }}
+
+@media
+(min-width: 2000px)     {
+
+            .bckgrnd    {   background-image:
+
+                            /* linear-gradient
+                            (rgba(255,255,255,0.05),
+                            rgba(255,255,255,0.05)), */
+
+                            url("../static/imgs/project-tp.jpg");           }}
+
+
+
+/*  Fonts  */
+
+@font-face      {       font-family: "borax-variable", sans-serif;
+                        font-variation-settings: "wght" 400;        }
+
+
+@font-face      {       font-family: "campus-mn", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                         }
+
+
+@font-face      {       font-family: "wausau", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                         }
+
+
+@font-face      {       font-family: "cc-pixel-arcade-display", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;                         }
+
+
+
+
+
+
+
+
+
