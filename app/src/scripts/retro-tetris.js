@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", (event) =>  {
 
 
 
-  start.addEventListener('click', ( ) =>  {
+  start.addEventListener('click', (e) =>  {
 
 
     clear(button);
@@ -169,11 +169,11 @@ document.addEventListener("DOMContentLoaded", (event) =>  {
     mySound.play();
 
 
-    event.preventDefault();
+    e.preventDefault();
 
 
 
-    play.addEventListener('click', ()   =>  {
+    play.addEventListener('click', (e)   =>  {
 
       clear(play);
 
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", (event) =>  {
 
         game.touchcontrols();
 
-        event.preventDefault();   })});
+        e.preventDefault();   })});
 
 
 
@@ -312,15 +312,15 @@ class gameboard {                                                               
 
   controls()  {                                                                                       //    Improvements:   Implement key controls for     inputs | outputs     through event listener
 
-    window.addEventListener("keyup", (event)  =>  {
+    window.addEventListener("keyup", (e)  =>  {
 
-      if (event.defaultPrevented) {
+      if (e.defaultPrevented) {
         return  }
 
       if (this.disable === true)  {
         return  }
 
-      switch (event.key)  {                                                                           //    Improvements:   The values of the switch are compared against the expression    --    Determines the code block to be executed
+      switch (e.key)  {                                                                               //    Improvements:   The values of the switch are compared against the expression    --    Determines the code block to be executed
 
         case "w":
           this.pipe();                                                                                //    Improvements:   Improved Orthonologity    --    W button rotates    --    Reduce mutiple function calls into one route
@@ -345,15 +345,15 @@ class gameboard {                                                               
 
     touchcontrols() {
 
-        window.addEventListener("click" , (event) => {
+        window.addEventListener("click" , (e) => {
 
-        if (event.defaultPrevented) {
+        if (e.defaultPrevented) {
             return  }
 
         if (this.disable === true)  {
             return  }
 
-        switch (event.target.id)  {
+        switch (e.target.id)  {
 
             case "btnRotate":
                 this.pipe();
