@@ -1,17 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
- <br><br><br><br><br><br><br><br><br><br>
+  <br><br>
 
   # README
 
@@ -61,15 +48,4 @@
   <br>
 
 
-  <br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
+  <br><br>
